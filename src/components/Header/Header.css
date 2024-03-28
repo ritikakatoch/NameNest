@@ -2,31 +2,51 @@
     display: flex;
     flex-direction: column;
     align-items : center;
-    margin-top: 60px;
+    margin-top: 80px;
 }
+
+  .centered-div {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%; /* Ensure the div takes up the entire height */
+  }
+  
+  .head-content {
+    display: flex; /* Use flexbox to position the image and title horizontally */
+    align-items: center; /* Vertical centering */
+  }
+  
 .head-image{
     width : auto;
+    margin-top: 20px;
     transition: max-width 1s, min-width 1s;
 }
 
 .head-image-expanded{
-    min-width: 230px;
-    max-width: 350px;
-}
-
-.head-image-contracted{
+    /* min-width: 230px;
+    max-width: 350px; */
     max-width: 160px;
     min-width: 60px;
 }
 
+.head-image-contracted{
+    max-width: 120px;
+    min-width: 40px;
+}
+
 .head-text{
-    font-family: 'Hachi Maru Pop', cursive;
-    margin : 5px 0 15px 0;
+    /*margin : 5px 0 15px 0;*/
+    margin-top: 80px;
     transition : font-size 1s;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: bold;
+    font-size : 70px;
 }
 
 .head-text-expanded{
-    font-size : 36px;
+    font-size : 40px;
 }
 
 .head-text-contracted{
